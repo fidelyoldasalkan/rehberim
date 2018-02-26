@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_person_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_person" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view_person_profile"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/name_must"
+                android:padding="10dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_name"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/edit_text_nick_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/nick_name"
+                android:padding="10dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:text="@string/use_nick_name"
+            android:id="@+id/checkbox_show_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_name"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/input_layout_nick_name"
+            android:layout_toRightOf="@+id/input_layout_nick_name" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_nick_name"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/edit_text_surname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/surname_must"
+                android:padding="10dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_surname"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/edit_text_number"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/number_must"
+                android:inputType="phone"
+                android:padding="10dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_number"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/edit_text_mail"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/input_layout_mail"
+            app:tabGravity="fill"
+            app:tabMode="fixed">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/social_media" />
+        </android.support.design.widget.TabLayout>
+    </RelativeLayout>
+</ScrollView>

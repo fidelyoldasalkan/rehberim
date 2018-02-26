@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Rehberim</string>
+    <string name="phone_number">Telefon No :</string>
+    <string name="mail_address">Mail Adresi :</string>
+    <string name="name_must">İsim (Zorunlu)</string>
+    <string name="surname_must">Soyisim (Zorunlu)</string>
+    <string name="number_must">Telefon Numarası (Zorunlu)</string>
+    <string name="e_mail">E Mail</string>
+    <string name="notes">Notlar</string>
+    <string name="save">Kaydet</string>
+    <string name="edit">Düzenle</string>
+    <string name="delete">Sil</string>
+    <string name="whatsapp_not_installed">Lütfen Whatsapp uygulamasını yükleyiniz</string>
+    <string name="call_history">Arama Geçmişi</string>
+    <string name="my_contacts">Kişilerim</string>
+    <string name="my_groups">Gruplarım</string>
+    <string name="nick_name">Takma Ad</string>
+    <string name="address">Adres</string>
+    <string name="social_media">Sosyal Medya</string>
+    <string name="use_nick_name">Takma adı kullan</string>
+</resources>
